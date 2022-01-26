@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box; /* tells the browser to ignore borders while calculating the width */
+}
+
+body {
+    margin: 0 auto;
+}
+
+header,footer {
+    height: 100px;
+    border: 3px solid black;
+    clear: both;  /* says "look to the left and right, if theres anything floating, come after it" */
+}
+
+section {
+    height: 300px;
+    width: 33.3333%;
+    border: 3px solid black; /* because of this 33.3333% wont work properly because the border adds to the content size for the box model and the last section element will break to a new line */
+    float: left;
+}
